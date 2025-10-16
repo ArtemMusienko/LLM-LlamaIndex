@@ -1,3 +1,5 @@
+![Google Colab](https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+
 ## LLM LlamaIndex
 В коде реализован подход с фиксированием версий ряда библиотек с которым работает готовый продукт. Это сделано для удобства и стабильности кода.
 
