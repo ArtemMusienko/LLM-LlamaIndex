@@ -1,5 +1,7 @@
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)![HuggingFace](https://img.shields.io/badge/huggingface-%23FFD21E.svg?style=for-the-badge&logo=huggingface&logoColor=white)
 
+![enter image description here](https://camo.githubusercontent.com/4075c6d74fc7fcb4da8b8b87655bbdc71de0e5c80b98dd17b7e23a18e5a181eb/68747470733a2f2f63646e2e6261702d736f6674776172652e6e65742f323032342f30352f32373137343831382f4c6c616d61496e6465782d65313731363738313738313232382e706e67)
+
 ## LLM LlamaIndex
 
 В коде реализован подход с фиксированием версий ряда библиотек, с которым работает готовый продукт. Это сделано для удобства и стабильности кода.
