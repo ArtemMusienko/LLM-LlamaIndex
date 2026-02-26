@@ -2,26 +2,30 @@
 
 ## LLM LlamaIndex
 
-В коде реализован подход с фиксированием версий ряда библиотек, с которым работает готовый продукт. Это сделано для удобства и стабильности кода.
+[![ru](https://img.shields.io/badge/README_на_русском-2A2C39?style=for-the-badge&logo=github&logoColor=white)](README.ru.md)  
 
->Для использования кода используйте
-> сгенерированный токен на **[HuggingFace](https://huggingface.co/settings/profile)** в настройках вашего профиля.
+The code implements an approach with fixing versions of a number of libraries, with which the finished product works. This is done for the convenience and stability of the code.
 
-Для общего понимания давайте разберем важные термины в этой работе:
+> To use the code, use
+> the generated token on **[HuggingFace](https://huggingface.co/settings/profile)** in your profile settings.
 
----
-**Llama Index** — это фреймворк для создания приложений, работающих с собственными данными, на основе больших языковых моделей. Он предоставляет инструменты для индексации, обработки и интеграции разнообразных источников данных в структурированный формат, понятный для **LLM**. Основная его задача — эффективное извлечение релевантной информации и её контекстуализация для улучшения ответов модели. Таким образом, **Llama Index** служит мощным связующим звеном между приватными данными и возможностями языковых моделей.
-
-**Gradio** — это библиотека с открытым исходным кодом для быстрого создания удобных веб-интерфейсов для машинного обучения и других программ на Python. Она позволяет разрабатывать интерактивные демонстрации моделей с помощью всего нескольких строк кода, предлагая готовые компоненты вроде полей ввода, слайдеров и графиков. Благодаря простоте использования **Gradio** ускоряет процесс тестирования, совместного использования и развертывания моделей. Это делает модели машинного обучения более доступными для пользователей без технического бэкграунда.
+For a general understanding, let's analyze the important terms in this work:
 
 ---
 
-Здесь используется модель *[IlyaGusev/saiga_mistral_7b](https://huggingface.co/IlyaGusev/saiga_mistral_7b_gguf)*. В качестве эмбеддинга будем использовать *[sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)*, которая хорошо работает с разными языками. 
-В качестве базы знаний, которая подается в *RAG-систему* будем использовать данную [статью](https://ru.wikipedia.org/wiki/TensorFlow). 
+**Llama Index** is a framework for creating applications that work with their own data, based on large language models. It provides tools for indexing, processing, and integrating diverse data sources into a structured format that is understandable to **LLM**. Its primary objective is to effectively extract relevant information and contextualize it to improve the model's responses. As a result, **Llama Index** serves as a powerful bridge between private data and the capabilities of language models.
 
-Также в коде представлена простая реализация **Gradio-интерфейса** с базовым функционалом: *распарсить данные* и *отправить запрос*. 
+**Gradio** is an open-source library for quickly creating user-friendly web interfaces for machine learning and other Python programs. It allows you to develop interactive model demos with just a few lines of code, offering ready-made components like input fields, sliders, and graphs. With its ease of use, **Gradio** accelerates the process of testing, sharing, and deploying models. This makes machine learning models more accessible to users without a technical background.
 
-Важно!
+---
 
-> Этот код получится выполнить только с использованием аппаратного
-> ускорителя. Я использовал графический **ускоритель T4** в **Google Colab**.
+This example uses the *[IlyaGusev/saiga_mistral_7b](https://huggingface.co/IlyaGusev/saiga_mistral_7b_gguf)* model. As embedding, we will use *[sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)*, which works well with different languages.
+
+ As the knowledge base that is fed into the *RAG system*, we will use this [article](https://ru.wikipedia.org/wiki/TensorFlow).
+
+The code also provides a simple implementation of the **Gradio interface** with basic functionality: *parse data* and *send a request*.
+
+Important!
+
+> This code can only be executed using a hardware
+> accelerator. I used a **T4 graphics accelerator** in **Google Colab**.
